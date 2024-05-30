@@ -2,41 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <title>Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
+  <main class="main-container">
 
-  Learn to code by watching others
+    <div class="text-container">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="description">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <div class="right-main-container">
+      <div class="purple-button"><strong>Try it free 7 days</strong> then $20/mo. thereafter</div>
+      <div class="form-container">
+        <form id="form" action="#" class="form">
+          <div class="input-wrapper"><input id="firstname" type="text" placeholder="FirstName" title="form-input"><svg id="erroricon1" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+          <p id="nameerror">First Name cannot be empty</p>
+          <div class="input-wrapper"><input id="lastname" type="text" placeholder="LastName" title="form-input"><svg id="erroricon2" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+          <p id="lastnameerror">Last Name cannot be empty</p>
+          <div class="input-wrapper"><input id="email" type="email" placeholder="Email" title="form-input"><svg id="erroricon3" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+          <p id="emailerror">Looks like this is not an email</p>
+          <div class="input-wrapper"><input id="password" type="password" placeholder="Password" title="form-input"></input><svg id="erroricon4" class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></input></div>
+          <p id="passerror">Password cannot be empty</p>
+          <button id="button" type="submit">CLAIM YOUR FREE TRIAL</button>
+        </form>
+        <p class="disclaimer">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+        Coded by <a href="#">Sarthak Sachdev</a>.
+      </p>
+    </footer>
+  </main>
 
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<script src="script.js"></script>
 </body>
 </html>
