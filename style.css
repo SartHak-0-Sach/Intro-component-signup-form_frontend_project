@@ -27,7 +27,8 @@
   
   body{
       font-family: "Poppins", sans-serif;
-      
+      min-height: 100vh;
+      margin-top: -15px
   }
   
   .main-container {
@@ -167,8 +168,6 @@
   
   }
   
-  
-  
   /* ------------------------------MEDIA QUERIES-------------------------- */
   
   @media screen and (min-width:900px) {
@@ -279,7 +278,5 @@
           bottom: 0;
           left: 50%;
           transform: translate(-50%, -50%);
-      
       }
-      
   }  
